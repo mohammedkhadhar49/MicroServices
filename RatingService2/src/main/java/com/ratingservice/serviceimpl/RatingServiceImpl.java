@@ -28,8 +28,9 @@ public class RatingServiceImpl implements RatingService{
 
 	@Override
 	public List<RatingModel> getAllRatings() {
-		
-		return ratingsRepository.findAll();
+		List<RatingModel> rating =  ratingsRepository.findAll();
+		System.out.println("rates :: "+rating);
+		return rating;
 	}
 
 	@Override

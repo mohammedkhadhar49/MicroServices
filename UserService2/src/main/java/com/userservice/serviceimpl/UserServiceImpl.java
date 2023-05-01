@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService{
 		//fetch rating of the above user from rating service 
 		//http://localhost:8083/ratings/users/3
 	 Rating[] userRatings =	restemTemplate.getForObject("http://RATING-SERVICE/ratings/users/"+userId, Rating[].class);
-		System.out.println("userRatings "+userRatings);
+		System.out.println("userRatings "+Arrays.toString(userRatings));
 		List<Rating> ratings  = Arrays.stream(userRatings).toList();
 		 //user.setRatings(userRatings);
 		

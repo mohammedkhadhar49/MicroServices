@@ -10,4 +10,5 @@ import com.userservice.model.Hotel;
 public interface HotelService {
 	@GetMapping("/hotels/{hotelId}")
 	Hotel getHotel(@PathVariable("hotelId") int hotelId);
+	
 }

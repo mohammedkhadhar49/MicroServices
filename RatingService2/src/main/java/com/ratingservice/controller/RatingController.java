@@ -37,4 +37,5 @@ public class RatingController {
 	public ResponseEntity<List<RatingModel>> getByUserId(@PathVariable String hotelId ){
 		return ResponseEntity.ok(ratingServiceImpl.getByHotelId(hotelId));
 	}
+	
 }

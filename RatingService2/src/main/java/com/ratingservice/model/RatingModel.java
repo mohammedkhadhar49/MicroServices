@@ -22,4 +22,35 @@ private Integer userId;
 private String hotelId;
 private Integer rating;
 private String feedBack;
+public String getRatingId() {
+	return ratingId;
+}
+public void setRatingId(String ratingId) {
+	this.ratingId = ratingId;
+}
+public Integer getUserId() {
+	return userId;
+}
+public void setUserId(Integer userId) {
+	this.userId = userId;
+}
+public String getHotelId() {
+	return hotelId;
+}
+public void setHotelId(String hotelId) {
+	this.hotelId = hotelId;
+}
+public Integer getRating() {
+	return rating;
+}
+public void setRating(Integer rating) {
+	this.rating = rating;
+}
+public String getFeedBack() {
+	return feedBack;
+}
+public void setFeedBack(String feedBack) {
+	this.feedBack = feedBack;
+}
+
 }
